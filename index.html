@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page de Test Google Analytics</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Page de Test Google Analytics</h1>
+      <nav>
+        <ul>
+          <li><a href="#section1">Accueil</a></li>
+          <li><a href="#section2">Fonctionnalités</a></li>
+          <li><a href="#section3">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="section1">
+        <h2>Bienvenue</h2>
+        <p>
+          Cette page sert à tester l’intégration de Google Analytics en
+          production.
+        </p>
+        <button id="btn-test">Cliquer pour envoyer un événement</button>
+      </section>
+
+      <section id="section2">
+        <h2>Fonctionnalités</h2>
+        <ul>
+          <li>Suivi des pages vues</li>
+          <li>Suivi des clics sur les boutons</li>
+          <li>Suivi des interactions utilisateurs</li>
+        </ul>
+      </section>
+
+      <section id="section3">
+        <h2>Contact</h2>
+        <p>
+          Email de test : <a href="mailto:test@example.com">test@example.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>&copy; 2026 Test Google Analytics</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
